@@ -66,7 +66,9 @@ public class Buzon {
     }
 }
 ```
+
 <br>
+
 ### CLASE MAIN EJECUTORA DEL PROGRAMA ( CREAMOS Y DEFINIMOS EL SUPUESTO ORDEN DE LOS HILOS ) 👀
 
 ```java
