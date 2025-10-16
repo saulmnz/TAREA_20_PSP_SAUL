@@ -8,7 +8,7 @@ public class Main {
         Thread hiloEscritor2 = new HiloEscritor(buzon, "SOY EL HILASO ESCRITOR 2 ;( ");
         Thread hiloLector2 = new HiloLector(buzon);
 
-        // PARA PROBAR LA SINCRONIZACIÓN UTILILZAMOS UN ORDEN DE LANZAMIENTO QUE CAUSE ESPERA.
+        // PARA PROBAR LA SINCRONIZACIÓN, UTILIZAMOS UN ORDEN DE LANZAMIENTO QUE CAUSE ESPERA.
 
         // EN UN INICIO EL BUZÓN ESTÁ VACÍO... ESTE HILO ESPERARÁ!!
         hiloLector1.start();
@@ -16,10 +16,10 @@ public class Main {
         // ESCRIBE EN EL BUZÓN Y DESPIERTA AL HILO LECTOR QUE ESTABA ESPERANDO.
         hiloEscritor1.start();
 
-        // ESPERA A QUE OTRO ESCRITOR LLENE EL BUZÓN YA QUE EL ANTERIOR HILO LECTOR LO VACIÓ,
+        // ESPERA A QUE OTRO ESCRITOR LLENE EL BUZÓN, YA QUE EL ANTERIOR HILO LECTOR LO VACIÓ.
         hiloLector2.start();
 
-        // ESCRIBE EL BUZÓN NOTIFICANDO Y DESPERTANDO AL LECTOR QUE ESPERA.
+        // ESCRIBE EN EL BUZÓN, NOTIFICANDO Y DESPERTANDO AL LECTOR QUE ESPERA.
         hiloEscritor2.start();
     }
 }
