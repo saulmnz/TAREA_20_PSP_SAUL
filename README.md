@@ -1,8 +1,8 @@
-# TAREA 20
+# TAREA 20 🐛
 
 > **Este programa demuestra nuevamente el uso de hilos concurrentes, hilos lectores y escritores que interactúan con un buzón con la condición de capacidad limitada para que en este solo exista un mensaje. Se aplican métodos como o ```wait()``` o ```notifyAll``` dentro de bloques ```synchronized``` para coordinar el acceso al buzón compartido. De esta manera un hilo escritor solo puede dejar un mensaje si el buzón está vacío y, al mismo tiempo, un hilo lector solo puede leer el buzón si hay un mensaje disponible, o lo que es lo mismo, si el buzón está lleno** 
 
-### CLASE BUZÓN 
+### CLASE BUZÓN 🐧
 ```java
 /**
  * LA CLASE BUZÓN SERÁ EL RECURSO COMPARTIDO QUE CONSTARÁ DE LAS SIGUIENTE REGLAS ->
@@ -68,7 +68,7 @@ public class Buzon {
 }
 ```
 
-### CLASE MAIN EJECUTORA DEL PROGRAMA ( CREAMOS Y DEFINIMOS EL SUPUESTO ORDEN DE LOS HILOS )
+### CLASE MAIN EJECUTORA DEL PROGRAMA ( CREAMOS Y DEFINIMOS EL SUPUESTO ORDEN DE LOS HILOS ) 👀
 
 ```java
 public class Main {
